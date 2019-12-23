@@ -243,6 +243,7 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 	const char *sensor_name;
 	uint16_t temp_sid = 0;
 	uint16_t vcmid = 0;
+<<<<<<< HEAD
 #ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
 	uint16_t lensid = 0;
 #endif
@@ -250,6 +251,11 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 #ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
 	int have_lensid = 0;
 #endif
+=======
+	uint16_t lensid = 0;
+	int have_vcmid = 0;
+	int have_lensid = 0;
+>>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
 	enum cci_i2c_master_t temp_master = MASTER_0;
 
 
@@ -307,7 +313,10 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 		have_vcmid = 1;
 	}
 
+<<<<<<< HEAD
 #ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
+=======
+>>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
     if (s_ctrl->sensordata->lens_id_info->lens_id_addr != 0)
 	{
 	    msm_camera_cci_i2c_read(
@@ -317,7 +326,10 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 		s_ctrl->sensordata->lens_id_info->data_type);
 		have_lensid = 1;
 	}
+<<<<<<< HEAD
 #endif
+=======
+>>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
 
 	sensor_i2c_client->cci_client->sid = temp_sid;
 	sensor_i2c_client->cci_client->cci_i2c_master = temp_master;
@@ -350,7 +362,10 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 				__func__, vcmid, s_ctrl->sensordata->vcm_id_info->vcm_id);
 			}
 		}
+<<<<<<< HEAD
 #ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
+=======
+>>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
         if(have_lensid == 1)
 		{
 			if (s_ctrl->sensordata->lens_id_info->lens_id != lensid)
@@ -366,7 +381,10 @@ int msm_sensor_match_vendor_id(struct msm_sensor_ctrl_t *s_ctrl)
 				__func__, lensid, s_ctrl->sensordata->lens_id_info->lens_id);
 			}
 		}
+<<<<<<< HEAD
 #endif
+=======
+>>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
 	}
 	pr_err("%s: read vendor id: 0x%x expected id 0x%x:\n",
 			__func__, vendorid, s_ctrl->sensordata->vendor_id_info->vendor_id);
