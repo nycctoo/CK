@@ -256,6 +256,7 @@ config MSM_SEC_CCI_DEBUG
 	  
 config XIAOMI_NEW_CAMERA_BLOBS
 	bool "Xiaomi new camera blobs"
+<<<<<<< HEAD
 	depends on MSM_CAMERA_SENSOR
 	---help---
 	  Enables the support for new camera blobs.
@@ -265,3 +266,9 @@ config PATCH_GCAM_FREEZE
 	depends on MSM_CAMERA_SENSOR
 	---help---
 	  Enables for fix front Gcam freeze.
+=======
+	default n
+	depends on MSM_CAMERA_SENSOR
+	---help---
+	  Enables the support for new camera blobs.
+>>>>>>> 512fa60fff64 (drivers: msm: camera_v2: Make unified for Newer and older camera blobs)
