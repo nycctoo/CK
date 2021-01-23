@@ -334,8 +334,6 @@ void msm_vfe48_stats_cfg_ub(struct vfe_device *vfe_dev)
 		64, /* MSM_ISP_STATS_BHIST */
 		80, /* MSM_ISP_STATS_AEC_BG */
 	};
-<<<<<<< HEAD
-=======
 #else
     uint32_t ub_size[VFE47_NUM_STATS_TYPE] = {
 		16, /* MSM_ISP_STATS_HDR_BE */
@@ -348,7 +346,6 @@ void msm_vfe48_stats_cfg_ub(struct vfe_device *vfe_dev)
 		16, /* MSM_ISP_STATS_BHIST */
 		16, /* MSM_ISP_STATS_AEC_BG */
 	};
->>>>>>> 512fa60fff64 (drivers: msm: camera_v2: Make unified for Newer and older camera blobs)
 #endif
 
 	stats_burst_len = VFE48_STATS_BURST_LEN;
