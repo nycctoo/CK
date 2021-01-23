@@ -2,7 +2,7 @@
 
 export KERNELNAME="CK"
 
-export LOCALVERSION=0.1
+export LOCALVERSION=0.2
 
 export KBUILD_BUILD_USER=Peter
 
