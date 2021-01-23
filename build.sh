@@ -24,9 +24,9 @@ START=$(date +"%s")
 
 for i in ${DEVICES//,/ }
 do
-	build ${i} -oldcam
+	build ${i} -oldcam -Littleoverclock
 
-	build ${i} -newcam
+	build ${i} -newcam -Littleoverclock
 done
 
 END=$(date +"%s")
