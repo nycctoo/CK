@@ -2,7 +2,7 @@
 
 export KERNELNAME="CK"
 
-export LOCALVERSION=0.1
+export LOCALVERSION=0.2
 
 export KBUILD_BUILD_USER=Peter
 
@@ -18,7 +18,7 @@ gen_toolchain
 
 send_msg "Start building ${KERNELNAME} ${LOCALVERSION} for ${DEVICES}..."
 
-send_msg "Starting building stock version..."
+send_msg "Starting building little oc version..."
 
 START=$(date +"%s")
 
@@ -27,20 +27,6 @@ do
 	build ${i} -oldcam
 
 	build ${i} -newcam
-done
-
-send_msg "Building OC version..."
-
-git apply oc.patch
-
-for i in ${DEVICES//,/ }
-do
-	if [ $i == "whyred" ] || [ $i == "tulip" ]
-	then
-		build ${i} -oldcam -overclock
-
-		build ${i} -newcam -overclock
-	fi
 done
 
 END=$(date +"%s")
