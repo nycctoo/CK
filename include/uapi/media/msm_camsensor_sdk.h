@@ -325,14 +325,7 @@ struct msm_vcm_id_info_t {
 	enum msm_cci_i2c_master_t cci_i2c_master;
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
-=======
->>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
-=======
-#ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
->>>>>>> 512fa60fff64 (drivers: msm: camera_v2: Make unified for Newer and older camera blobs)
 struct msm_lens_id_info_t {
 	unsigned short eeprom_slave_addr;
 	unsigned short lens_id_addr;
