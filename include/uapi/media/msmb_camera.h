@@ -53,21 +53,7 @@
 #define MSM_CAMERA_SUBDEV_EXT          19
 #define MSM_CAMERA_SUBDEV_TOF          20
 #define MSM_CAMERA_SUBDEV_LASER_LED    21
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 512fa60fff64 (drivers: msm: camera_v2: Make unified for Newer and older camera blobs)
-#ifdef CONFIG_XIAOMI_NEW_CAMERA_BLOBS
 #define MSM_MAX_CAMERA_SENSORS  7
-#else
-#define MSM_MAX_CAMERA_SENSORS  6
-#endif
-<<<<<<< HEAD
-=======
-#define MSM_MAX_CAMERA_SENSORS  7
->>>>>>> 680127eedf2e (drivers: msm: camera_v2: fix new version)
-=======
->>>>>>> 512fa60fff64 (drivers: msm: camera_v2: Make unified for Newer and older camera blobs)
 
 /* The below macro is defined to put an upper limit on maximum
  * number of buffer requested per stream. In case of extremely
