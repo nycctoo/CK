@@ -18,29 +18,15 @@ gen_toolchain
 
 send_msg "Start building ${KERNELNAME} ${LOCALVERSION} for ${DEVICES}..."
 
-send_msg "Starting building stock version..."
+send_msg "Starting building OC version..."
 
 START=$(date +"%s")
 
 for i in ${DEVICES//,/ }
 do
-	build ${i} -oldcam
+	build ${i} -oldcam -OC
 
-	build ${i} -newcam
-done
-
-send_msg "Building OC version..."
-
-git apply oc.patch
-
-for i in ${DEVICES//,/ }
-do
-	if [ $i == "whyred" ] || [ $i == "tulip" ]
-	then
-		build ${i} -oldcam -overclock
-
-		build ${i} -newcam -overclock
-	fi
+	build ${i} -newcam -OC
 done
 
 END=$(date +"%s")
