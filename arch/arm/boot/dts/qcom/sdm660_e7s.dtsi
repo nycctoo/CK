@@ -51,11 +51,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x0>;
-<<<<<<< HEAD
-			clock-frequency = <1612800000>;
-=======
 			clock-frequency = <1843200000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile0>;
 			qcom,lmh-dcvs = <&lmh_dcvs0>;
@@ -88,11 +84,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x1>;
-<<<<<<< HEAD
-			clock-frequency = <1612800000>;
-=======
 			clock-frequency = <1843200000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile0>;
 			qcom,lmh-dcvs = <&lmh_dcvs0>;
@@ -119,11 +111,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x2>;
-<<<<<<< HEAD
-			clock-frequency = <1612800000>;
-=======
 			clock-frequency = <1843200000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile0>;
 			qcom,lmh-dcvs = <&lmh_dcvs0>;
@@ -150,11 +138,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x3>;
-<<<<<<< HEAD
-			clock-frequency = <1612800000>;
-=======
 			clock-frequency = <1843200000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile0>;
 			qcom,lmh-dcvs = <&lmh_dcvs0>;
@@ -181,11 +165,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x100>;
-<<<<<<< HEAD
-			clock-frequency = <1804800000>;
-=======
 			clock-frequency = <2208000000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile1>;
 			qcom,lmh-dcvs = <&lmh_dcvs1>;
@@ -216,11 +196,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x101>;
-<<<<<<< HEAD
-			clock-frequency = <1804800000>;
-=======
 			clock-frequency = <2208000000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile2>;
 			qcom,lmh-dcvs = <&lmh_dcvs1>;
@@ -247,11 +223,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x102>;
-<<<<<<< HEAD
-			clock-frequency = <1804800000>;
-=======
 			clock-frequency = <2208000000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile3>;
 			qcom,lmh-dcvs = <&lmh_dcvs1>;
@@ -278,11 +250,7 @@
 			device_type = "cpu";
 			compatible = "arm,kryo";
 			reg = <0x0 0x103>;
-<<<<<<< HEAD
-			clock-frequency = <1804800000>;
-=======
 			clock-frequency = <2208000000>;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 			enable-method = "psci";
 			qcom,limits-info = <&mitigation_profile4>;
 			qcom,lmh-dcvs = <&lmh_dcvs1>;
@@ -1503,23 +1471,8 @@
 
 		qcom,perfcl-speedbin3-v0 =
 			<   300000000 0x0004000f 0x01200020 0x1 1 >,
-<<<<<<< HEAD
 			<   633600000 0x05040021 0x03200020 0x1 2 >,
 			<   902400000 0x0404002f 0x04260026 0x1 3 >,
-			<  1113600000 0x0404003a 0x052e002e 0x2 4 >,
-			<  1401600000 0x04040049 0x073a003a 0x2 5 >,
-			<  1747200000 0x0404005b 0x09480048 0x2 6 >,
-			<  1804800000 0x0404005e 0x094b004b 0x2 7 >;
-
-		qcom,perfcl-speedbin4-v0 =
-			<   300000000 0x0004000f 0x01200020 0x1 1 >,
-			<   633600000 0x05040021 0x03200020 0x1 2 >,
-			<   902400000 0x0404002f 0x04260026 0x1 3 >,
-			<  1113600000 0x0404003a 0x052e002e 0x2 4 >,
-			<  1401600000 0x04040049 0x073a003a 0x2 5 >,
-			<  1747200000 0x0404005b 0x09480048 0x2 6 >,
-			<  1958400000 0x04040066 0x0a510051 0x2 7 >;
-=======
 			<  1113600000 0x0404003a 0x052e002e 0x1 2 >,
 			<  1401600000 0x04040049 0x073a003a 0x2 3 >,
 			<  1747200000 0x0404005b 0x09480048 0x2 4 >,
@@ -1528,12 +1481,13 @@
 
 		qcom,perfcl-speedbin4-v0 =
 			<   300000000 0x0004000f 0x01200020 0x1 1 >,
+			<   633600000 0x05040021 0x03200020 0x1 2 >,
+			<   902400000 0x0404002f 0x04260026 0x1 3 >,
 			<  1113600000 0x0404003a 0x052e002e 0x1 2 >,
 			<  1401600000 0x04040049 0x073a003a 0x2 3 >,
 			<  1747200000 0x0404005b 0x09480048 0x2 4 >,
 			<  1958400000 0x04040066 0x0a510051 0x2 5 >,
 			<  2208000000 0x04040073 0x0b5c005c 0x3 6 >;
->>>>>>> 8f4666fbffbd (dts: CPU OC Performance cluster -> 2.2GHz)
 
 		qcom,up-timer = <1000 1000>;
 		qcom,down-timer = <1000 1000>;
